@@ -73,8 +73,6 @@
               {!! Form::text( 'url', null, ['class' => 'form-control textbox',
                               'id'                            => 'url',
                               'placeholder'                   => 'Enter URL',
-                              'oninput'                       => 'name_validation(this);',
-                              'oninvalid'                     => 'name_validation(this);',
                               'required'                      => 'true'
                               ]) !!}
               
@@ -88,9 +86,7 @@
             <div class="col-md-9">
               {!! Form::text( 'title', null, ['class' => 'form-control textbox',
                               'id'                            => 'title',
-                              'placeholder'                   => 'Enter Name',
-                              'oninput'                       => 'name_validation(this);',
-                              'oninvalid'                     => 'name_validation(this);',
+                              'placeholder'                   => 'Enter Title',
                               'required'                      => 'true'
                               ]) !!}
               {!! $errors->first('name', '<p class="help-block">:message</p>') !!}
@@ -103,9 +99,8 @@
             <div class="col-md-9">
               {!! Form::text( 'short_url', null, ['class' => 'form-control textbox',
                               'id'                            => 'short_url',
-                              'placeholder'                   => 'Enter Name',
-                              'oninput'                       => 'name_validation(this);',
-                              'oninvalid'                     => 'name_validation(this);',
+                              'placeholder'                   => 'Enter Short URL',
+                              'readonly'                      => 'true',
                               'required'                      => 'true'
                               ]) !!}
               {!! $errors->first('name', '<p class="help-block">:message</p>') !!}
