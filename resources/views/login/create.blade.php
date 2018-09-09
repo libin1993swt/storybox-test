@@ -5,7 +5,7 @@
 
     <!-- BEGIN LOGO -->
     <div class="logo">
-    	<img src="assets/img/cater_icon/logo.png" alt=""/>
+    	
     </div>
     <!-- END LOGO -->
     <!-- BEGIN LOGIN -->
@@ -49,16 +49,9 @@
     			</button>
     		</div>
 
-    		<div class="forget-password">
-                <h4>Forgot your password ?</h4>
-                <p>
-                     No worries, click <a href="javascript:;" id="forget-password">here</a>
-                    to reset your password.
-                </p>
-            </div>
     		<div class="create-account">
     			<p>
-    				 Don't have an account yet ?&nbsp; <a href="javascript:;" id="register-btn">Create an account</a>
+    				 Don't have an account yet ?&nbsp; <a href="{{ url('/register') }}" id="register-btn">Create an account</a>
     			</p>
     		</div>
   {!! Form::close() !!}
@@ -173,7 +166,7 @@
 
     <!-- BEGIN COPYRIGHT -->
     <div class="copyright">
-    	 2017 &copy; Caterparts
+    	 2018 &copy; Storybox
     </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
