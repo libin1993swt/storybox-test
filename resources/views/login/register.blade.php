@@ -5,7 +5,7 @@
 
     <!-- BEGIN LOGO -->
     <div class="logo">
-    	<img src="assets/img/cater_icon/logo.png" alt=""/>
+    	
     </div>
     <!-- END LOGO -->
     <!-- BEGIN LOGIN -->
@@ -40,7 +40,7 @@
     			<label class="control-label">Full Name</label>
     			<div class="input-icon">
     				<i class="fa fa-font"></i>
-    				<input class="form-control placeholder-no-fix" type="text" placeholder="Full Name" name="name" required />
+    				<input class="form-control placeholder-no-fix" type="text" placeholder="Full Name" name="name" oninput="name_validation(this);" oninvalid="name_validation(this);" required />
     			</div>
     		</div>
     		<div class="form-group">
@@ -48,7 +48,7 @@
     			<label class="control-label">Email</label>
     			<div class="input-icon">
     				<i class="fa fa-envelope"></i>
-    				<input class="form-control placeholder-no-fix" type="text" placeholder="Email" name="email" required />
+    				<input class="form-control placeholder-no-fix" type="text" placeholder="Email" name="email" oninput="email_validation(this);" oninvalid="email_validation(this);" required />
     			</div>
     		</div>
     		
@@ -56,7 +56,7 @@
     			<label class="control-label">Password</label>
     			<div class="input-icon">
     				<i class="fa fa-lock"></i>
-    				<input class="form-control placeholder-no-fix" type="password" autocomplete="off" id="register_password" placeholder="Password" name="password" required />
+    				<input class="form-control placeholder-no-fix" type="password" autocomplete="off" id="register_password" placeholder="Password" name="password" oninput="new_password_validation(this);" oninvalid="new_password_validation(this);" required />
     			</div>
     		</div>
     		<div class="form-group">
@@ -64,7 +64,7 @@
     			<div class="controls">
     				<div class="input-icon">
     					<i class="fa fa-check"></i>
-    					<input class="form-control" type="password" autocomplete="off" placeholder="Re-type Your Password" name="confirm_password" required />
+    					<input class="form-control" type="password" autocomplete="off" placeholder="Re-type Your Password" name="confirm_password" oninput="confirm_password_validation(this);" oninvalid="confirm_password_validation(this);" required />
     				</div>
     			</div>
     		</div>
@@ -83,12 +83,12 @@
 
     <!-- BEGIN COPYRIGHT -->
     <div class="copyright">
-    	 2017 &copy; Caterparts
+    	 2018 &copy; Storybox
     </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
 <script src="assets/plugins/backstretch/jquery.backstretch.min.js" type="text/javascript"></script>
-<script src="{{ URL::asset('assets/validations/admin/login/login_validation.js') }}" type="text/javascript"></script>
+<script src="{{ URL::asset('assets/my_script/signup_validation.js') }}" type="text/javascript"></script>
 
 <script>
 $.backstretch([
