@@ -22,8 +22,9 @@ class DashboardController extends Controller
     	foreach ($urls as $data) {
     		$temp = 0;
     		foreach ($urls as $value) {
-    			$temp = $temp + 1;
+    			
     			if($data->url == $value->url) {
+                    $temp = $temp + 1;
     				if($temp >=2) {
     					$duplicate_count = $duplicate_count + 1;
     				}
