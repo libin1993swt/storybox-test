@@ -31,6 +31,11 @@ $("#submit").click(function(){
                                 body += "<td>"+result.urls[i].url+"</td>";
                                 body += "<td>"+result.urls[i].short_url+"</td>";
                                 body += "<td>"+result.urls[i].created_at+"</td>";
+
+                                body += "<td>";            
+                                body += "<button class='btn btn-success btn-sm copy' onclick='copyToClipboard(this)'> <span class='fa fa-unlock'> </span> &nbsp;Copy Short URL </button>"; 
+                                body += "</td>";
+                                
                                 body += "</tr>";
                             }
                         body += "</tbody>";
