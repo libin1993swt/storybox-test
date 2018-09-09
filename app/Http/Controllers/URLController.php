@@ -18,7 +18,7 @@ class URLController extends Controller
     public function index() {
         $name = Auth::user()->name;
     	$id = Auth::user()->id;
-    	$urls = URL::where('user_id',$id)->orderBy('url_id','desc')->get();
+    	$urls = URL::with('user')->where('user_id',$id)->orderBy('url_id','desc')->get();
     	return view('admin.urls.index',compact('urls','name'));
     }
 
