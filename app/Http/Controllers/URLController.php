@@ -16,9 +16,10 @@ class URLController extends Controller
 {
     //n
     public function index() {
+        $name = Auth::user()->name;
     	$id = Auth::user()->id;
     	$urls = URL::where('user_id',$id)->orderBy('url_id','desc')->get();
-    	return view('admin.urls.index',compact('urls'));
+    	return view('admin.urls.index',compact('urls','name'));
     }
 
     public function save_url(Request $request) {
@@ -56,7 +57,17 @@ class URLController extends Controller
 		return response()->json(['status' => true, 'count' => $count, 'string' => $string ]);
 	}
 
-	public function original_url($url){
-		return redirect('https://www.google.com/');
+	public function original_url($url) {
+        $id = Auth::user()->id;
+        $data = URL::where('user_id',$id)->where('short',$url)->get();
+
+        $size = sizeof($data);
+        if($size > 0) {
+            $original_url = $data[0]->url;
+            return redirect($original_url);
+        }
+        else {
+            return redirect()->back();
+        }	
 	}
 }
