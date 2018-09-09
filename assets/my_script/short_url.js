@@ -21,7 +21,7 @@ $("#url").change(function(){
                      if(result.status == true) {
                      	var count = result.count; 
                      	var title = 'Short URL '+count;
-                     	var short_url = 'https://storybox.tk/'+result.string;
+                     	var short_url = 'https://storybox-test.tk/s/'+result.string;
                      	$("#title").val(title);
                      	$("#short_url").val(short_url);
                        // swal('Admin user deleted.');
