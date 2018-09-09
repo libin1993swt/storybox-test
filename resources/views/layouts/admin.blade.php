@@ -11,8 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Storybox</title>
-    <!-- <link rel="shortcut icon" href="/caterpartsonthefly/assets/img/cater_icon/deal_title_icon.ico"/> -->
-    <!-- Fonts -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
 
@@ -93,7 +92,6 @@
     	<div class="header-inner">
     		<!-- BEGIN LOGO -->
     		<a class="navbar-brand" href="">
-    		<!-- <img src="../../../assets/img/dealicon/admin_logo(1).png" alt="logo" class="img-responsive"/> -->
     		</a>
     		<!-- END LOGO -->
     		<!-- BEGIN RESPONSIVE MENU TOGGLER -->
@@ -103,7 +101,7 @@
     		<!-- END RESPONSIVE MENU TOGGLER -->
     		<!-- BEGIN TOP NAVIGATION MENU -->
     		<ul class="nav navbar-nav pull-right welcome_user">
-          <li class="dropdown user"> <span class="fa fa-user"> </span> Welcome  </li>
+          <li class="dropdown user"> <span class="fa fa-user"> </span> Welcome  {{ $name }}</li>
     			<!-- BEGIN USER LOGIN DROPDOWN -->
           <!-- <li class="dropdown user">
     				<a href="#" class="dropdown-toggle">
@@ -131,7 +129,7 @@
     			<ul class="page-sidebar-menu">
     				<li class="sidebar-toggler-wrapper">
     					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
-              <img src="http://mightypush.com/caterpartsonthefly/assets/img/cater_icon/logo.png" alt="logo" class="img-responsive cater_logo"/>
+              <span class="img-responsive cater_logo"/> </span>
 
     					<div class="sidebar-toggler hidden-phone">
     					</div>
@@ -174,7 +172,7 @@
 
 			
             <li id="frontend-link" class="{{ Request::segment(1) === 'logout' ? 'active' : null }}" data-placement="right">
-    					<a href="{{ url('/logout')}}">
+    					<a href="{{ url('/logout') }}">
     					<i class="fa fa-user-md"></i>
     					<span class="title">
     						Logout
@@ -222,7 +220,7 @@
 
     <div class="footer">
     	<div class="footer-inner">
-    		 2017 &copy; Cater Parts.
+    		 2018 &copy; Storybox.
     	</div>
     	<div class="footer-tools">
     		<span class="go-top">
@@ -230,11 +228,7 @@
     		</span>
     	</div>
     </div>
-    <!-- <div class="footer custom-footer">
-      <div class="footer-inner">
-         2017 &copy; Cater Parts.
-      </div>
-    </div> -->
+    
 
 
 
