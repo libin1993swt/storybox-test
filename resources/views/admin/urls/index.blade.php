@@ -167,6 +167,8 @@
 
         </div>
 
+        <input type="text" class="form-control" id="copy_text" readonly>
+
       </div>
   </div>
 </div>
@@ -201,51 +203,7 @@
     user_length[0].firstElementChild.style.lineHeight = "32px";
   });
 
-  $(document).on("click", ".delete_admin_user", function(){
-    // alert($(this).text());
-    var admin_id = $(this).siblings('input[type="hidden"]').val();
-    var token = $('#token').val();
-    console.log("ID = " + admin_id);
-    swal({
-      title: "Are you sure?",
-      text: "You will not be able to recover this imaginary file!",
-      type: "warning",
-      showCancelButton: true,
-      confirmButtonColor: "#DD6B55",
-      confirmButtonText: "Delete",
-      cancelButtonText: "Cancel",
-      closeOnConfirm: true,
-      closeOnCancel: true
-    },
-    function(isConfirm){
-      if (isConfirm) {
-        // deleting manufacturer
-
-        $.ajax({
-                   url: "/caterpartsonthefly/admin/admin_user/delete_admin_user",
-                   method: "POST",
-                   data: {
-                     _token : token,
-                     id: admin_id
-                   },
-                   traditional: true,
-                   success: function(result) {
-                     if(result.status == true) {
-                       swal('Admin user deleted.');
-                       location.reload();
-                     }
-                     else {
-                       swal('Some error occured. Please try again.');
-                       location.reload();
-                     }
-                   }
-             });
-      }
-      else {
-
-      }
-    });
-  });
+  
 </script>
 
 @endsection
