@@ -40,7 +40,7 @@
     			<label class="control-label">Full Name</label>
     			<div class="input-icon">
     				<i class="fa fa-font"></i>
-    				<input class="form-control placeholder-no-fix" type="text" placeholder="Full Name" name="name" oninput="name_validation(this);" oninvalid="name_validation(this);" required />
+    				<input class="form-control placeholder-no-fix" type="text" id="name" placeholder="Full Name" name="name" oninput="name_validation(this);" oninvalid="name_validation(this);" required />
     			</div>
     		</div>
     		<div class="form-group">
@@ -48,7 +48,7 @@
     			<label class="control-label">Email</label>
     			<div class="input-icon">
     				<i class="fa fa-envelope"></i>
-    				<input class="form-control placeholder-no-fix" type="text" placeholder="Email" name="email" oninput="email_validation(this);" oninvalid="email_validation(this);" required />
+    				<input class="form-control placeholder-no-fix" id="email" type="text" placeholder="Email" name="email" oninput="email_validation(this);" oninvalid="email_validation(this);" required />
     			</div>
     		</div>
     		
@@ -56,7 +56,7 @@
     			<label class="control-label">Password</label>
     			<div class="input-icon">
     				<i class="fa fa-lock"></i>
-    				<input class="form-control placeholder-no-fix" type="password" autocomplete="off" id="register_password" placeholder="Password" name="password" oninput="new_password_validation(this);" oninvalid="new_password_validation(this);" required />
+    				<input class="form-control placeholder-no-fix" type="password" autocomplete="off" id="password" placeholder="Password" name="password" oninput="new_password_validation(this);" oninvalid="new_password_validation(this);" required />
     			</div>
     		</div>
     		<div class="form-group">
@@ -64,7 +64,7 @@
     			<div class="controls">
     				<div class="input-icon">
     					<i class="fa fa-check"></i>
-    					<input class="form-control" type="password" autocomplete="off" placeholder="Re-type Your Password" name="confirm_password" oninput="confirm_password_validation(this);" oninvalid="confirm_password_validation(this);" required />
+    					<input class="form-control" type="password" autocomplete="off" placeholder="Re-type Your Password" name="confirm_password" id="confirm_password" oninput="confirm_password_validation(this);" oninvalid="confirm_password_validation(this);" required />
     				</div>
     			</div>
     		</div>
