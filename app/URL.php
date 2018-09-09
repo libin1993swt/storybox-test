@@ -33,4 +33,11 @@ class URL extends Model
                                   'title' => 'required',
                                   'short_url' => 'required',
                                    );
+    
+    /**
+    * User with url relation.
+    */
+    public function user() {
+      return $this->belongsTo('App\User','user_id');
+    }
 }
