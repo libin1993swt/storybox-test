@@ -36,7 +36,6 @@ Route::get('/urls','URLController@index');
 Route::post('/ajax/url/save','URLController@save_url');
 
 Route::post('/ajax/url','URLController@short_url');
-
 });
 
 Route::get('/logout','RegisterController@logout');
