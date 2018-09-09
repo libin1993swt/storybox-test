@@ -1,0 +1,18 @@
+[28-Aug-2017 16:55:39 Asia/Kolkata] PHP Fatal error:  Class 'App\Job' not found in /home/might2vb/public_html/caterpartsonthefly/app/Http/Controllers/User/HomeController.php on line 35
+[30-Aug-2017 12:51:00 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/might2vb/public_html/caterpartsonthefly/app/Http/Controllers/Admin/JobController.php on line 31
+[30-Aug-2017 12:57:17 Asia/Kolkata] PHP Parse error:  syntax error, unexpected 'whereDate' (T_STRING) in /home/might2vb/public_html/caterpartsonthefly/app/Http/Controllers/Admin/JobController.php on line 32
+[31-Aug-2017 14:51:33 Asia/Kolkata] PHP Fatal error:  Class 'App\Providers\RouteServiceProvider' not found in /home/might2vb/public_html/caterpartsonthefly/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146
+[11-Sep-2017 14:10:50 Asia/Kolkata] PHP Fatal error:  Class 'App\FAQ' not found in /home/might2vb/public_html/caterpartsonthefly/app/Http/Controllers/User/ContentController.php on line 19
+[21-Sep-2017 11:44:23 Asia/Kolkata] PHP Fatal error:  Class 'App\Http\Controllers\User\SearchController' not found in /home3/palatty/public_html/app/Http/Controllers/User/PriceRangeController.php on line 136
+[21-Sep-2017 16:14:57 Asia/Kolkata] PHP Fatal error:  Call to a member function toJSON() on array in /home3/palatty/public_html/app/Http/Controllers/Admin/EnquiryController.php on line 132
+[03-Oct-2017 11:43:36 Asia/Kolkata] PHP Fatal error:  Class 'GuzzleHttp\Client' not found in /home3/palatty/public_html/vendor/laravel/framework/src/Illuminate/Mail/TransportManager.php on line 163
+[11-Oct-2017 17:57:31 Asia/Kolkata] PHP Parse error:  syntax error, unexpected end of file in /home3/palatty/public_html/app/Http/Controllers/Admin/PartsController.php on line 429
+[11-Oct-2017 18:08:02 Asia/Kolkata] PHP Parse error:  syntax error, unexpected end of file in /home3/palatty/public_html/storage/framework/views/c719c32364703dae3ee9df0baaef3a60075eec4b.php on line 325
+[11-Oct-2017 18:08:31 Asia/Kolkata] PHP Parse error:  syntax error, unexpected end of file in /home3/palatty/public_html/storage/framework/views/c719c32364703dae3ee9df0baaef3a60075eec4b.php on line 325
+[11-Oct-2017 18:11:30 Asia/Kolkata] PHP Parse error:  syntax error, unexpected end of file in /home3/palatty/public_html/app/Http/Controllers/Admin/PartsController.php on line 821
+[12-Oct-2017 09:11:31 Asia/Kolkata] PHP Parse error:  syntax error, unexpected end of file in /home3/palatty/public_html/app/Http/Controllers/Admin/PartsController.php on line 429
+[21-Oct-2017 15:13:18 Asia/Kolkata] PHP Warning:  Unterminated comment starting line 361 in /home3/palatty/public_html/app/Http/routes.php on line 361
+[26-Oct-2017 15:11:24 Asia/Kolkata] PHP Fatal error:  Cannot use lexical variable $eventName as a parameter name in /home/palatty/public_html/vendor/guzzlehttp/guzzle/src/Event/Emitter.php on line 48
+[26-Oct-2017 15:12:19 Asia/Kolkata] PHP Fatal error:  Cannot use lexical variable $eventName as a parameter name in /home/palatty/public_html/vendor/guzzlehttp/guzzle/src/Event/Emitter.php on line 48
+[26-Oct-2017 15:14:51 Asia/Kolkata] PHP Fatal error:  Cannot use lexical variable $eventName as a parameter name in /home/palatty/public_html/vendor/guzzlehttp/guzzle/src/Event/Emitter.php on line 48
+[26-Oct-2017 15:41:04 Asia/Kolkata] PHP Fatal error:  Cannot use lexical variable $eventName as a parameter name in /home/palatty/public_html/vendor/guzzlehttp/guzzle/src/Event/Emitter.php on line 48
