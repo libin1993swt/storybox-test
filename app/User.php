@@ -29,4 +29,11 @@ class User extends Authenticatable
                                   'email' => 'required | email | unique:users',
                                   'password' => 'required',
                                    );
+    
+    /**
+    * User with url relation.
+    */
+    public function url() {
+      return $this->hasMany('App\URL','id');
+    }
 }
