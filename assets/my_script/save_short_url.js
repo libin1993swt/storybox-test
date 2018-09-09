@@ -29,7 +29,7 @@ $("#submit").click(function(){
                                 body += "<td>"+ (i+1) +"</td>";
                                 body += "<td>"+result.urls[i].title+"</td>";
                                 body += "<td>"+result.urls[i].url+"</td>";
-                                body += "<td>"+result.urls[i].short_url+"</td>";
+                                body += "<td class='short_url'>"+result.urls[i].short_url+"</td>";
                                 body += "<td>"+result.urls[i].created_at+"</td>";
 
                                 body += "<td>";            
