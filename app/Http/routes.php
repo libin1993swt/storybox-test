@@ -27,15 +27,21 @@ Route::post('/register','RegisterController@register');
 
 Route::post('/authenticate','RegisterController@authenticate');
 
+Route::group(['middleware' => 'auth'], function () {
+
 Route::get('/dashboard','DashboardController@dashboard');
 
 Route::get('/urls','URLController@index');
-
-Route::get('/{url}','URLController@original_url');
 
 Route::post('/ajax/url/save','URLController@save_url');
 
 Route::post('/ajax/url','URLController@short_url');
 
+});
+
 Route::get('/logout','RegisterController@logout');
+
+Route::get('/s/{url}','URLController@original_url');
+
+
 
