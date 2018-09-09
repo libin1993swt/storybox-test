@@ -56,7 +56,7 @@
   function confirm_password_validation(data) {
     var confirm_pass = data.value;
     var len = confirm_pass.length;
-    var new_pass = $("#new_password").val();
+    var new_pass = $("#password").val();
     if(confirm_pass == "") {
         data.setCustomValidity('Enter Confirm Password');
         $("#confirm_password").addClass("invalid");
