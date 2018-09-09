@@ -59,6 +59,7 @@ class URLController extends Controller
 
 	public function original_url($url) {
         $id = Auth::user()->id;
+	$url = 'https://storybox-test.tk/s/'.$url;
         $data = URL::where('user_id',$id)->where('short',$url)->get();
 
         $size = sizeof($data);
