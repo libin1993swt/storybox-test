@@ -51,7 +51,7 @@
 
     		<div class="create-account">
     			<p>
-    				 Don't have an account yet ?&nbsp; <a href="{{ url('/register') }}" id="register-btn">Create an account</a>
+    				 Don't have an account yet ?&nbsp; <a href="{{ url('/sign-up') }}" id="register-btn">Create an account</a>
     			</p>
     		</div>
   {!! Form::close() !!}
